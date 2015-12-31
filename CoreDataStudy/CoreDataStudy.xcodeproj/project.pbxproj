@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183B30761C33E4C800067AEC /* PKOBooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183B30751C33E4C800067AEC /* PKOBooksTableViewController.swift */; };
+		183B30781C33E5BD00067AEC /* PKOBookDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183B30771C33E5BD00067AEC /* PKOBookDetailTableViewController.swift */; };
+		183B307A1C33E62200067AEC /* PKOBookEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183B30791C33E62200067AEC /* PKOBookEditViewController.swift */; };
+		183B307C1C33E68100067AEC /* PKOBookAddTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183B307B1C33E68100067AEC /* PKOBookAddTableViewController.swift */; };
+		183B30801C33EACE00067AEC /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183B307F1C33EACE00067AEC /* Book.swift */; };
 		185EFA891C30E990001FBA5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185EFA881C30E990001FBA5F /* AppDelegate.swift */; };
 		185EFA8B1C30E990001FBA5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185EFA8A1C30E990001FBA5F /* ViewController.swift */; };
 		185EFA8E1C30E990001FBA5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185EFA8C1C30E990001FBA5F /* Main.storyboard */; };
@@ -27,6 +32,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		183B30751C33E4C800067AEC /* PKOBooksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKOBooksTableViewController.swift; sourceTree = "<group>"; };
+		183B30771C33E5BD00067AEC /* PKOBookDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKOBookDetailTableViewController.swift; sourceTree = "<group>"; };
+		183B30791C33E62200067AEC /* PKOBookEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKOBookEditViewController.swift; sourceTree = "<group>"; };
+		183B307B1C33E68100067AEC /* PKOBookAddTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKOBookAddTableViewController.swift; sourceTree = "<group>"; };
+		183B307F1C33EACE00067AEC /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		185EFA851C30E990001FBA5F /* CoreDataStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		185EFA881C30E990001FBA5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		185EFA8A1C30E990001FBA5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +96,11 @@
 				185EFA941C30E990001FBA5F /* LaunchScreen.storyboard */,
 				185EFA971C30E990001FBA5F /* Info.plist */,
 				185EFA8F1C30E990001FBA5F /* CoreDataStudy.xcdatamodeld */,
+				183B307F1C33EACE00067AEC /* Book.swift */,
+				183B30751C33E4C800067AEC /* PKOBooksTableViewController.swift */,
+				183B30771C33E5BD00067AEC /* PKOBookDetailTableViewController.swift */,
+				183B30791C33E62200067AEC /* PKOBookEditViewController.swift */,
+				183B307B1C33E68100067AEC /* PKOBookAddTableViewController.swift */,
 			);
 			path = CoreDataStudy;
 			sourceTree = "<group>";
@@ -143,6 +158,7 @@
 		185EFA7D1C30E990001FBA5F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0720;
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = www.ixx.com;
@@ -202,8 +218,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183B30801C33EACE00067AEC /* Book.swift in Sources */,
 				185EFA8B1C30E990001FBA5F /* ViewController.swift in Sources */,
 				185EFA911C30E990001FBA5F /* CoreDataStudy.xcdatamodeld in Sources */,
+				183B30761C33E4C800067AEC /* PKOBooksTableViewController.swift in Sources */,
+				183B307A1C33E62200067AEC /* PKOBookEditViewController.swift in Sources */,
+				183B307C1C33E68100067AEC /* PKOBookAddTableViewController.swift in Sources */,
+				183B30781C33E5BD00067AEC /* PKOBookDetailTableViewController.swift in Sources */,
 				185EFA891C30E990001FBA5F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,10 +352,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CoreDataStudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ixx.CoreDataStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -342,6 +365,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = CoreDataStudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ixx.CoreDataStudy;
@@ -392,6 +416,7 @@
 				185EFAA71C30E990001FBA5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		185EFAA81C30E990001FBA5F /* Build configuration list for PBXNativeTarget "CoreDataStudyTests" */ = {
 			isa = XCConfigurationList;
@@ -400,6 +425,7 @@
 				185EFAAA1C30E990001FBA5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
